@@ -1,0 +1,49 @@
+<!--service start -->
+<section id="service" class="service">
+    <div class="container">
+        <div class="service-content">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-service-item">
+                        <div class="single-service-icon">
+                            <i class="flaticon-car"></i>
+                        </div>
+                        <h2>Form Page</h2>
+                        <p>
+                           Sample Form 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--/.container-->
+    <div class = "row">
+        <div class="col-12">
+            <form method="POST">
+                {% csrf_token %}
+                {{form}}
+                {% comment %} <div>
+                    <label for "">value1</label>
+                    <input type ="text" name = "num1" value="{{n1}}" class="form-control" />
+                </div>
+                <div>
+                    <label for "">value2</label>
+                    <input type ="text" name = "num2"value="{{n2}}" class="form-control" />
+                </div>
+                <div>
+                    <label for "">value3</label>
+                    <input type ="text" name = "num3" value="{{n3}}" class="form-control" />
+                </div> {% endcomment %}
+                <div class = "pt-4">
+                    <button type = "submit">Submit</button>
+                </div>
+                <div class = "pt-4">
+                    Output : 
+                    {{output}}
+                </div>
+            </form>
+        </div>
+    </div>
+
+</section><!--/.service-->
+<!--service end-->
